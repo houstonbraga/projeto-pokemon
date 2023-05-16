@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+body {
+    font-family: 'Poppins', sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-image: linear-gradient(45deg, rgba(255, 255, 0, 0.795) , rgba(255, 0, 0, 0.747));
+    color: #333333;
+}
+
+body.modo-noturno{
+    background-image: linear-gradient(45deg, rgb(0, 10, 53) , black);
+    color: #f5f5f5;
+}
+
+.modo-noturno .cartao{
+    background-image: linear-gradient(45deg , rgb(138, 137, 137) , rgb(90, 88, 88));
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 35px;
+
+}
+
+header .logo,
+header .imagem-botao{
+    width: 30px;
+    transition: 0.2s ease-in-out;
+    padding: 40px 0 0 0;
+}
+
+
+
+header #javascript-tema{
+    background: none;
+    border: none;
+}
+
+header .logo:hover,
+header .imagem-botao:hover,
+main .cartao:hover{
+    transform: scale(1.10);
+    cursor: pointer;
+}
+
+main{
+    padding: 25px;
+}
+
+main .listagem{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+main .cartao{
+    background-image: linear-gradient(45deg , #ffffff , #a7b9c7);
+    width: 200px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.582);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+main .cartao:hover{
+    background-image: linear-gradient(45deg , #d8e3ec , #71818d);
+}
+
+/* estilos dentro do cartão */
+
+main .cartao .indentificacao{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #333333;
+    border-radius: 10px;
+}
+
+main .cartao .indentificacao span{
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+main .cartao .tipos{
+    display: flex;
+    gap: 15px;
+    
+}
+
+main .cartao .tipo{
+    padding: 8px;
+    border-radius: 10px;
+    color: white;
+}
+
+main .cartao .gif{
+    width: 80px;
+    height: 80px;
+}
+
+main .descricao{
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 14px;
+    padding-right: 10px;
+}
+
+/* propriedades dos pokémons */
+
+.grama{
+    background-color: #7ac74c;
+}
+
+.veneno{
+    background-color: #d824cf;
+}
+
+.fogo{
+    background-color: #ff4800fd;
+}
+
+.agua{
+    background-color: rgb(0, 217, 255);
+}
+
+.inseto{
+    background-color: rgb(0, 209, 94);
+}
+
+.eletrico{
+    background-color: rgb(255, 166, 0);
+}
+
+.fada{
+    background-color: pink;
+}
+
+.normal{
+    background-color: black;
+}
+
+.voador{
+    background-color: rgb(0, 38, 255);
+}
+
+
